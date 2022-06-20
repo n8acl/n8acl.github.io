@@ -7,10 +7,16 @@ jobs:
       - uses: actions/checkout@v1
       - id: log
         run: echo "::set-env name=POST_COMMIT_MESSAGE::$(git log --no-merges -1 --pretty=%B)"
-      - uses: ethomson/send-tweet-action@v1
+      #- uses: ethomson/send-tweet-action@v1
+       # with:
+       #   status: "NEW POST: ${% raw %}{{ steps.log.output.message }}{% endraw %}"
+       #   consumer-key: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_KEY }}{% endraw %}
+       #   consumer-secret: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_SECRET }}{% endraw %}
+       #   access-token: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN }}{% endraw %}
+       #   access-token-secret: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}{% endraw %}
+      - name: fediverse-action
+        uses: rzr/fediverse-action@v0.0.6
         with:
-          status: "NEW POST: ${% raw %}{{ steps.log.output.message }}{% endraw %}"
-          consumer-key: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_KEY }}{% endraw %}
-          consumer-secret: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_SECRET }}{% endraw %}
-          access-token: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN }}{% endraw %}
-          access-token-secret: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}{% endraw %}
+          access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          message: "NEW POST: ${% raw %}{{ steps.log.output.message }}{% endraw %}"
+
