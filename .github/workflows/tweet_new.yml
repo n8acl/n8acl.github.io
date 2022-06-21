@@ -6,4 +6,6 @@ on:
 jobs:
   tweet:
     uses: n8acl/reusable_workflows/.github/workflows/tweet.yml@main
+    with:
+      status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
     secrets: inherit  
