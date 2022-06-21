@@ -81,7 +81,6 @@ jobs:
           message: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
 ```
 {% endraw %}
-When copy and pasting this to a new workflow file, be sure to remove the ```{% raw %}``` and ```{% endraw %}``` tags around the secrets. If these are not there in the post, they get stripped out of the code block and you would not know they are there.
 
 ### Breakdown
 
