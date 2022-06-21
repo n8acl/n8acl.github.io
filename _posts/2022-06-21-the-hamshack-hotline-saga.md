@@ -1,0 +1,58 @@
+---
+layout: post
+title: "The Hamshack Hotline - Our Story - A Rebuttal"
+categories: Ham-Radio
+---
+
+Warning: Wall of text about to start.
+
+Where do I begin....
+
+There has been a lot of lies and a lot of accusations being thrown around about this issue that, while it does not effect all of us, it effects a few. And most of these lies and accusations are coming from one side. I wanted to take the time to set the record straight on a number of things about Ham's Over IP.
+
+Up to this point, I have been keeping my mouth shut and just ignorning what was going on, but I decided to break my silence and try to set things straight over what all happened.
+
+So I suppose I should start from the beginning.
+
+A few years ago, I found out about Hamshack Hotline, a VOIP phone service designed for Ham Radio Operators. I found the idea very interesting and a cool use of technology, so I signed up to join and I was with them for a number of years. At one point they incorporated and invited me to be on their Board of Directors and one of the system engineers as I did do some development for the service. I also made a number of friends on the service as well, people who I am still friends with today. So not everything in dealing with this was bad.
+
+Some of the peer servers, as well as some of the application servers, were owned and operated as donations to the service to help them expand the service's capabilites. These were paid for out of the owners pockets and maintenance was handled by them. At one point, when all of these issues began to arrise, these servers were asked to be transfered under a different HH cloud service account, but since these were paid for servers out of the member's pocket, this request was denied. The owners even asked to just get the HH credit card number to just transfer payments to HH and they were ignored. They just wanted the servers under their control. We felt like something was not right. 
+
+Over time, others were brought in to help with handling tickets as there was an explosion of people wanting to use the service, which was great for them. A few of them were elevated to Director status, without the consultation of the rest of the Board. Ok. No big deal right.
+
+One of these individuals eventually decided to go cowboy and felt like he was the only one who could do anyting in relation to handling tickets or making decisions for the organization. He would grab large batches of provisioning tickets from the ticketing system and then sit on them for days at a time and then work on them, pushing his completion metrics through the roof since no one else was able to work on these tickets.
+
+Moving forward, he would also go back and reopen tickets that others had already completed to ask the user, again, for license verifications. Which was completely uncalled for and unnessesary step. The person who had originally worked the ticket had already done this verification in the past. But he felt the need to do it again, without being asked to do so. Again, this was not only an attempt to push his numbers up, but also a very disrepectful way of saying "This person did not do their job to my satisfaction and I am going to question their work." 
+
+He would say that there were issues on the servers and needed help getting them straightened out. Admins and Enginneers would reach out to try to help him and troubleshoot the issues to duplicate them, only to be berated and yelled at by this individual about just taking guesses or just not knowing what they were doing, or why were we wasting his time. To the point that people washed their hands of helping him.
+
+He took over work on the wiki and rewriting articles to make them his, instead of following proper procedures, and basically just pushed the person who was in charge of it out. That's fine.
+
+All of these and other concerns were, REPEATEDLY, brought to the attention of the founder and his right hand man that these issues were causing problems and needed to be dealt with. And these always fell on deaf ears.
+
+At the beginning of the year, an administrative meeting for all the engineers and admins, was going to be called to have a meeting about the direction of the organization and plans for the upcoming year, like any organization should have. This meeting was never scheduled. The directors, engineers and other admin staff REPEATEDLY asked for the meeting to be scheduled so that issues could be dealt with. It never happened. Eventualy a post was made to the admins from the founder that the meeting topic was going to be talking about respecting each other and how this one individual was doing great work (as evidenced by his numbers) (remember he was artificially inflating his numbers?) and we needed a plan to help take the load off him and all pull our weight. The admins that have been having issues, blew up. None of that was true and if any repect was needed, it was from this one individual.
+
+We hit March of this year. By this point a number of us were tired of being ignored and nothing being done to help fix the problem. After repeated attempts to have the issues dealt with and being ignored, things came to a head. A Ham Radio group requested a conference bridge on the system. They were summarily denied this bridge, even though they met all the requirements to obtain said bridge. This denial came from one individual. When questioned about it, he said they did not meet requirements and said no more. We repeatedly pointed out that, no the bridge should have been granted and even quoted his own wiki article about what the requirements were and still, radio silence. It got to the point that we would repeatedly reopen the ticket to have the bridge provisioned and he would just close it, as if his word was final. The other admins were constantly asking for answers and again, ignored.
+
+The last week of March, 5 of the engineers and administrators logged into Discord and found we had lost all of our administrative priviledges on the server. No notice. No warning. No Nothing... just gone. And this happened over night as I didn't log off till about 12:00 12:30 in the morning Eastern and I still had access at that point. We of course started questioning why the loss of privledges and started airing all of the problems in the lobby. We were then all pulled into a text channel, that was called "The Courtroom". Whether that was meant to be funny or not, it was incredibly insulting. We were not the ones who needed to be on "Trial". Yet in their own arrogance, they felt this was needed. It was at that point I threw my hands up and walked away. I was not being put "on trial" for something I didn't do. So I blocked all of the problem people on Discord and left the server and walked away. I was over all the nonsense and power plays and just walked away. 
+
+Over the course of the next few days, the people who were left in charge of HH tried to justify why they had done what they had done, and eventually the other 4 people were banned from the Discord server. Over the course of the next couple of weeks, all the moderators were dismissed and banned. Anyone on HH that spoke out about the issue were banned. Anyone who even thought about the issue were banned. It became a police state.
+
+Of the original 5 people who were banned, one of them was one of the people who fronted all the money for two of the peer servers, HHAP and HHUX. When we were all just removed, he took the servers with him. In their finite wisdom, HH just turned off the connection for HHAP, but never turned off the connection for HHUX. So all the scrambling they did for about a month trying to get the HHAP server backup was due to their own move in cutting off their nose to spite their face.
+
+Eventually HH went through and marked all of the extensions of the people who were banned or left voluntarily for deletion and eventually deleted them all. That was alright by me as the day I left after finding out that I had lost Admin priviledges, I shut off my PBX that was handling my trunk and reloaded it. I was never going back and I never will. I also shut off all of the Discord bots I had developed and hosted here, on my own hardware, for them and deleted the applications on Discord so the bot would not work.
+
+Taking those 2 servers, us and a number of other fine people who also either left HH right way or were banned, came together and have formed another VOIP network for Hams, Ham's Over IP (HOIP). Many of the users of HH have voluntarily come over to the new service and have extensions over there. HOIP welcomes everyone and even with all the drama caused by HH, we still encourage people to use that service as well. There is no reason why people cannot use as many services as they want. 
+
+Some other things to point out that have been happening over the last couple of months:
+* There was a mad scramble to get HHAP back online. They claimed that it was because the backups were corrupted and they had to rebuild the system. Well that was a lie. They cut off the access to the rest of the HH network to HHAP and did not have access to the backups kept on that server. Backups were always kept. And they were not corrupt. They just didn't want to admit what they had done to alienate all those users. 
+* This corporate restructuring they claim was happening? Just the banning of everyone who had managed to keep the servers up and running.
+* In their latest Facebook post? The cowboying they were talking about? Nope... It was not done by us, but by them. They would make undocumented changes and expect the rest of us to make the fixes to make other things work.
+* The monitoring software was put in place at the request of the founder to monitor if the servers went down or had issues.
+* The tarnishing they claim? Nope. We actually encourage people to use both services. The bad mouthing and tarnishing is because of their own actions. As more and more of their users are tired of being lied to and having smoke blown at them, they are leaving. But we still encourage them to use HH if they want to. If anyone even mentions HOIP, they are banned from the HH service. We know because we have had a number of new users who have come over who have, of their own accord, told us that they were banned because they mentioned HOIP.
+
+Most of the issues that they are having right now are because of them. They refused to actually deal with the problems that were happening and instead just hoped it would go away. When it did not, they just made it go away. They are creating their own problems and they are trying to project these issues onto us. As stated previously, HOIP welcomes anyone who wants to use the HOIP service and encourage you to use the other services out there as well. There is no reason why we all can't co-exist.
+
+Recently, as a courtesy to existing users of HHUX since it still has a connection to the rest of the HH Network, an email was sent out talking about the issues that were going on and that in the near future, the connection would be severed and anyone who was using HH from that server would loose connection to HH. HH has made it clear that they do not want trunks or connections from other VOIP Phone systems to be able to access their service, so we are just complying with their wishes. The existing users are able to convert their extensions over to HOIP if they like. If not, they will loose connectivity and will need to get a new extension on HH. This was not done because we are trying to poach users or anything. We are not forcing people to stay on our service. They have the choice to stay or leave. Either way, we will accomodate them. 
+
+I will update this in the future as new issues arrise. For now, this is probably enough.
