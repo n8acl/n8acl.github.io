@@ -10,8 +10,8 @@ jobs:
           status: "$(git log --no-merges -1 --pretty=%B)"
           api_key: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_KEY }}{% endraw %}
           api_key_secret: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_SECRET }}{% endraw %}
-          access-token: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN }}{% endraw %}
-          access-token-secret: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}{% endraw %}
+          access_token: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN }}{% endraw %}
+          access_token_secret: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}{% endraw %}
       - name: fediverse-action
         uses: rzr/fediverse-action@v0.0.6
         with:
