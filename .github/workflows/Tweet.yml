@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: infraway/tweet-action@v1.0.1
         with:
-          status: "NEW POST: github.event.commits[0].message"
+          status: "NEW POST: ${{ github.event.commits[0].message }}"
           api_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           api_key_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
           access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
@@ -16,4 +16,4 @@ jobs:
         uses: rzr/fediverse-action@v0.0.6
         with:
           access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
-          message: "NEW POST: github.event.commits[0].message"
+          message: "NEW POST: ${{ github.event.commits[0].message }}"
