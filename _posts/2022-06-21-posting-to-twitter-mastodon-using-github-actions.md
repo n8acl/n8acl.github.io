@@ -69,17 +69,19 @@ jobs:
         uses: infraway/tweet-action@v1.0.1
         with:
           status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
-          api_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-          api_key_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-          access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          api_key: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_KEY }}{% endraw %}
+          api_key_secret: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_SECRET }}{% endraw %}
+          access_token: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN }}{% endraw %}
+          access_token_secret: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}{% endraw %}
       - name: send-mastodon
         uses: rzr/fediverse-action@v0.0.6
         with:
-          access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          access-token: ${% raw %}{{ secrets.MASTODON_ACCESS_TOKEN }}{% endraw %}
           host: "mastodon.radio"
-          message: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
+          message: "NEW POST: ${% raw %}{{ github.event.commits[0].message }} https://n8acl.github.io"
 ```
+
+When copy and pasting this to a new workflow file, be sure to remove the ```{% raw %}``` and ```{% endraw %}``` tags around the secrets. If these are not there in the post, they get stripped out of the code block and you would not know they are there.
 
 ### Breakdown
 
@@ -105,10 +107,10 @@ jobs:
         uses: infraway/tweet-action@v1.0.1
          with:
           status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
-          api_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-          api_key_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-          access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          api_key: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_KEY }}{% endraw %}
+          api_key_secret: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_SECRET }}{% endraw %}
+          access_token: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN }}{% endraw %}
+          access_token_secret: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}{% endraw %}
 ```
 
 Here I am defining the job itself. This first step is where I am sending a message to Twitter that there is a new post.
@@ -117,7 +119,7 @@ Here I am defining the job itself. This first step is where I am sending a messa
       - name: send-mastodon
         uses: rzr/fediverse-action@v0.0.6
         with:
-          access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          access-token: ${% raw %}{{ secrets.MASTODON_ACCESS_TOKEN }}{% endraw %}
           host: "mastodon.radio"
           message: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
 ```
