@@ -53,7 +53,7 @@ You will then need to put all of these keys into seperate secrets in your Github
 Now we can create a new workflow YAML file for our pipeline. You should already be familiar with creating an Action from scratch, so all you need to do is copy and paste the below YAML into a new one.
 
 Here is the workflow YAML file I finally ended up with:
-
+{% raw %}
 ```yaml
 name: Send a Tweet
 on:
@@ -69,18 +69,18 @@ jobs:
         uses: infraway/tweet-action@v1.0.1
         with:
           status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
-          api_key: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_KEY }}{% endraw %}
-          api_key_secret: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_SECRET }}{% endraw %}
-          access_token: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN }}{% endraw %}
-          access_token_secret: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}{% endraw %}
+          api_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+          api_key_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
       - name: send-mastodon
         uses: rzr/fediverse-action@v0.0.6
         with:
-          access-token: ${% raw %}{{ secrets.MASTODON_ACCESS_TOKEN }}{% endraw %}
+          access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           host: "mastodon.radio"
-          message: "NEW POST: ${% raw %}{{ github.event.commits[0].message }} https://n8acl.github.io"
+          message: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
 ```
-
+{% endraw %}
 When copy and pasting this to a new workflow file, be sure to remove the ```{% raw %}``` and ```{% endraw %}``` tags around the secrets. If these are not there in the post, they get stripped out of the code block and you would not know they are there.
 
 ### Breakdown
@@ -97,6 +97,7 @@ on:
 
 First I give the job a name and then I only want it to run when there is a push to the ```_posts``` folder in the repo, basically when I add a new post file. That is what I am saying here. I am filtering the pushes on that folder. That way if I make an update to a static page like a contact page or an about page, I don't want those commits posts to the Micro-Blogging Services.
 
+{% raw %}
 ```yaml
 jobs:
   tweet:
@@ -107,22 +108,25 @@ jobs:
         uses: infraway/tweet-action@v1.0.1
          with:
           status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
-          api_key: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_KEY }}{% endraw %}
-          api_key_secret: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_SECRET }}{% endraw %}
-          access_token: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN }}{% endraw %}
-          access_token_secret: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}{% endraw %}
+          api_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+          api_key_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
 ```
+{% endraw %}
 
 Here I am defining the job itself. This first step is where I am sending a message to Twitter that there is a new post.
 
+{% raw %}
 ```yaml
       - name: send-mastodon
         uses: rzr/fediverse-action@v0.0.6
         with:
-          access-token: ${% raw %}{{ secrets.MASTODON_ACCESS_TOKEN }}{% endraw %}
+          access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           host: "mastodon.radio"
           message: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
 ```
+{% endraw %}
 
 This last part does the same as the Twitter part, but just posts it to Mastodon. Make sure that you set the ```host:``` line to your Mastodon Instance. Otherwise it will default to Mastodon.social.
 
