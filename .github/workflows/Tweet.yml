@@ -1,5 +1,8 @@
 name: Send a Tweet
-on: [push]
+on:
+  push:
+    paths:
+    - '_posts/**'
 jobs:
   tweet:
     runs-on: ubuntu-latest
