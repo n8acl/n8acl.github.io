@@ -8,10 +8,10 @@ jobs:
       - uses: infraway/tweet-action@v1.0.1
         with:
           status: "$(git log --no-merges -1 --pretty=%B)"
-          api_key: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_KEY }}{% endraw %}
-          api_key_secret: ${% raw %}{{ secrets.TWITTER_CONSUMER_API_SECRET }}{% endraw %}
-          access_token: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN }}{% endraw %}
-          access_token_secret: ${% raw %}{{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}{% endraw %}
+          api_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+          api_key_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
       - name: fediverse-action
         uses: rzr/fediverse-action@v0.0.6
         with:
