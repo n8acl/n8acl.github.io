@@ -5,7 +5,7 @@ on:
     - '_posts/**'
 
 env:
-  status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
+  status: "${{ github.event.commits[0].message }} https://n8acl.github.io"
 
 jobs:
   tweet:
