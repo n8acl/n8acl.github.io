@@ -4,6 +4,8 @@ title: "Posting to Twitter/Mastodon with Github Actions"
 categories: github
 ---
 
+#### Updated 06/22/2022
+
 # Introduction
 
 So this blog site is relativly new, as you well know, and when I put it together, I wanted a way to make it easier for me to make posts. In the past I have used Wordpress, but I have found that the industry is moving more towards using static sites vs. dynamic sites. Between ease of use/deployment and the inherrant security issues with a dynamic site, it makes sense. Not that Wordpress is by any means a bad CMS to use, I just didn't want the headaches of hosting it here and constantly maintaining it to patch holes. So I wanted to try working with a static generator. I did some research and landed on Jekyll and Github Pages. That really peeked my interest because of:
@@ -50,7 +52,7 @@ You will then need to put all of these keys into seperate secrets in your Github
 
 ## The Workflow YAML file
 
-Now we can create a new workflow YAML file for our pipeline. You should already be familiar with creating an Action from scratch, so all you need to do is copy and paste the below YAML into a new one.
+Now we can create a new workflow YAML file for our pipeline. You should already be familiar with creating an Action workflow from scratch, so all you need to do is copy and paste the below YAML into a new one.
 
 Here is the workflow YAML file I finally ended up with:
 {% raw %}
@@ -59,26 +61,29 @@ name: Send a Tweet
 on:
   push:
     paths:
-        - '_posts/**'
+    - '_posts/**'
+
+env:
+  status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
+
 jobs:
   tweet:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: send-twitter
-        uses: infraway/tweet-action@v1.0.1
+      - uses: infraway/tweet-action@v1.0.1
         with:
-          status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
+          status: ${{ env.status }}
           api_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           api_key_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
           access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-      - name: send-mastodon
+      - name: fediverse-action
         uses: rzr/fediverse-action@v0.0.6
         with:
           access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           host: "mastodon.radio"
-          message: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
+          message: ${{ env.status }}
 ```
 {% endraw %}
 
@@ -92,9 +97,15 @@ on:
   push:
     paths:
     - '_posts/**'
+
+
+env:
+  status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
 ```
 
 First I give the job a name and then I only want it to run when there is a push to the ```_posts``` folder in the repo, basically when I add a new post file. That is what I am saying here. I am filtering the pushes on that folder. That way if I make an update to a static page like a contact page or an about page, I don't want those commits posts to the Micro-Blogging Services.
+
+We are also creating an evironment Variable that holds our status message we want posted. This creates the message from the commit message and includes the site URL.
 
 {% raw %}
 ```yaml
@@ -106,7 +117,7 @@ jobs:
       - name: send-twitter
         uses: infraway/tweet-action@v1.0.1
          with:
-          status: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
+          status: ${{ env.status }}
           api_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           api_key_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
           access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
@@ -116,6 +127,8 @@ jobs:
 
 Here I am defining the job itself. This first step is where I am sending a message to Twitter that there is a new post.
 
+We are using the environment variable that we created to now fill in the status message for Twitter.
+
 {% raw %}
 ```yaml
       - name: send-mastodon
@@ -123,7 +136,7 @@ Here I am defining the job itself. This first step is where I am sending a messa
         with:
           access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           host: "mastodon.radio"
-          message: "NEW POST: ${{ github.event.commits[0].message }} https://n8acl.github.io"
+          message: ${{ env.status }}
 ```
 {% endraw %}
 
@@ -149,5 +162,5 @@ I am planning on using this on a number of my other repos as well to make deploy
 
 While I am not using these exactly how they are defined in these articles, these were my jumping off point on getting this all configured.
 
-Tweeting New GitHub Pages Posts from GitHub Actions - Dave Brock: [https://www.daveabrock.com/2020/04/19/posting-to-twitter-from-gh-actions/](https://www.daveabrock.com/2020/04/19/posting-to-twitter-from-gh-actions/)
+Tweeting New GitHub Pages Posts from GitHub Actions - Dave Brock: [https://www.daveabrock.com/2020/04/19/posting-to-twitter-from-gh-actions/](https://www.daveabrock.com/2020/04/19/posting-to-twitter-from-gh-actions/)<br/>
 fediverse-action repo: [https://github.com/rzr/fediverse-action](https://github.com/rzr/fediverse-action)
