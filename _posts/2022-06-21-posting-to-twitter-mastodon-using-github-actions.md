@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Posting to Twitter/Mastodon with Github Actions"
+tags: Github
 categories: github
 ---
 

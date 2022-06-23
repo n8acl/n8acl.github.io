@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Hamshack Hotline - Our Story - A Rebuttal"
+tags: Ham-Radio
 categories: Ham-Radio
 ---
 

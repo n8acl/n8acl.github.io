@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bridge Allstar to Discord"
+tags: Ham-Radio
 categories: Ham-Radio
 ---
 
