@@ -53,7 +53,9 @@ minima:
 header_pages:
   - about_site.md
   - about_me.md
+  - _layouts/archive.html
   - contact.md
+  
 
 jekyll-archives:
   enabled: [all]
