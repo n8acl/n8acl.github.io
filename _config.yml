@@ -53,15 +53,9 @@ minima:
 header_pages:
   - about_site.md
   - about_me.md
-  - _layouts/archive.html
+  - archive.html
   - contact.md
-  
 
-jekyll-archives:
-  enabled: [all]
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
 
 # Build settings
 theme: minima
@@ -69,5 +63,4 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-archives
 
