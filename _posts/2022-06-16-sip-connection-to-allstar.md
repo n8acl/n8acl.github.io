@@ -63,13 +63,13 @@ You will need to do the following:
 Then add a stanza similiar to this:
 
 ```bash
-[203]
+[2000]
 type=friend
 host=dynamic
-username=203
+username=2000
 secret=<your secret password>  ; make it yours 
 dtmfmode=rfc2833
-mailbox=203                  ; Mailbox for message waiting indicator
+mailbox=2000                  ; Mailbox for message waiting indicator
 context=myphone           ; Points to the stanza in extensions.conf
 callerid="<Your callsign>"
 ```
