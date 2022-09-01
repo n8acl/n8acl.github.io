@@ -80,7 +80,7 @@ First you will need to setup a Discord Bot and a voice channel in order for the 
 
 Now we need to setup a private Allstar node in order for the application to send audio to and from Allstar.
 
-If you have setup private nodes before (for DMR/D-Star/etc or for bridging in your phone) you can skip this step. If not, or if you need a review.
+If you have setup private nodes before (for DMR/D-Star/etc or for bridging in your phone) you can skip this step. If not, or if you need a review feel free to keep reading.
 
 You will need to edit 3 files in ```/etc/asterisk``` on your Allstar server: ```extensions.conf```, ```rpt.conf``` and ```modules.conf```
 
