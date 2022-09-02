@@ -7,11 +7,11 @@ categories: ["Home-Automation","Smoking/BBQ"]
 
 ## Introduction
 
-Tech has always been my number one hobby. I always have liked playing with computers and gadgets. Remember how on my homepage of this blog I mentioned that I have many other hobbies? I have always looked for ways where I can incorporate tech into these hobbies as well, beyond just using a GPS to find a greeat fishing spot or that really cool campsite off in the woods.
+Tech has always been my number one hobby. I always have liked playing with computers and gadgets. Remember how on my homepage of this blog I mentioned that I have many other hobbies? I have always looked for ways where I can incorporate tech into these hobbies as well, beyond just using a GPS to find a great fishing spot or that really cool campsite off in the woods.
 
 Within the last few months, I have started smoking meat. I have always wanted to try it and for Fathers Day of 2022, my wife and son bought me an electric smoker. I've done all sorts of meats in it so far. Brisket, pork butt, chicken. I still have some ribs to try and want to try a ham and a turkey at some point. But one of the biggest pain points that I have run into so far is the constant maintenance of the tempurature of the chamber. Unlike wood fired smokers, I don't have a fire I have to tend to, but I do need to make sure I monitor the temps of the chamber and the meat itself to make sure things are cooking properly. I had a cheap little multi-probe thermometer that I used to monitor it all, but the thing was, I constantly had to get up from what I was doing, go outside, check the temps, adjust and then do it all over again 15-30 minutes later. 
 
-So for my birthday, my loving wife got me a [Tenergy Solis iBBQ Bluetooth Smart Thermometer](https://www.amazon.com/dp/B077821Z4C?psc=1&ref=ppx_yo2ov_dt_b_product_details). This one I can use bluetooth to connect it to my phone and get notifications on temps and also check the temp in real time of the meat and chamber. But since I am a geek, while that adds to the geek factor of smoking meat, I wanted to do more. Enter Home Automation.
+So for my birthday this year, my loving wife got me a [Tenergy Solis iBBQ Bluetooth Smart Thermometer](https://www.amazon.com/dp/B077821Z4C?psc=1&ref=ppx_yo2ov_dt_b_product_details). This one I can use bluetooth to connect it to my phone and get notifications on temps and also check the temp in real time of the meat and chamber. But since I am a geek, while that adds to the geek factor of smoking meat, I wanted to do more. Enter Home Automation.
 
 I have been using Home Assistant (HA) to run some automations in the house for a few years now. Things like lights for example. So I wanted to tie this new thermometer into HA to be able to see everything on one dashboard, show graphs of the temps so I can see if the temps are on the right course and get notifications on when temps have reached certain things and also set reminders to check on things like wood chips or temps.
 
@@ -92,3 +92,11 @@ There are multiple ways that I can accomplish this:
 * Since Theengs Gateway does not directly connect to the thermometer, I can still use the app on my phone and set alarms there as well.
 
 If you choose to use a different programming platform, you can also choose to use that to send notifications. Whatever you choose to use, you need will need to get notifications to stay on top of things.
+
+## Wrap Up
+
+And there you have it. That is how I have automated my temperature monitoring for when I am smoking meat. This will really help my future cooks and help free me up to help out in finishing dinner in other aspects. Plus it adds a nice geek factor to another one of my hobbies.
+
+Hope you have a successful smoke as well!
+
+Enjoy! Till next time!
