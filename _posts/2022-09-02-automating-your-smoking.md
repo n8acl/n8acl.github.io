@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Automating Your Smoking"
-tags: ["Home-Automation","Smoking/BBQ"]
-categories: ["Home-Automation","Smoking/BBQ"]
+tags: ["Home-Automation","Smoking/BBQ", "Home-Assistant"]
+categories: ["Home-Automation","Smoking/BBQ", "Home Assistant"]
 ---
 
 ## Introduction
