@@ -38,7 +38,6 @@ DAPNET:
 * N8ACL (RIC: 0110795)
 
 Amateur Radio VOIP Phone Services
-* Hams Over IP (HOIP) [https://hamsoverip.com](https://hamsoverip.com) - EXT 100070
 * Online Amateur Radio Community (OARC) (UK Based) [https://www.oarc.uk](https://www.oarc.uk) - EXT 4046
 * AmateurWire [https://amateurwire.com](https://amaterwire.com) - EXT 1090
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Razer Nostromo Gamepad for Home Automations"
+title: "Using a Razer Nostromo Gamepad for Home Automations"
 tags: ["Home-Automation","Gaming", "Home-Assistant"]
 categories: ["Home-Automation","Gaming", Home-Assistant]
 ---
@@ -15,7 +15,7 @@ But now I have this additional peripheral living on my desk. I start looking at 
 
 So for a while I was just clicking a button on a computer screen or using my phone or the Alexa sitting on my desk to change the color. But I needed a quicker way. And since I had a hunk of computer equipment with ALOT of programmable buttons on it, I thought it would be nice to be able to hit a button and have the lights change.
 
-So now during the working day, I switch keybind modes on the gamepad and I can use the buttons to fire automations in Home Assistant that let me control not only the meeting light, but my desk lamp, and other lights in the house, all with the push of a button. After work, when it's time to game, I just switch keybinds again to the correct profile for the game I am playing and I am offf to killing zombie hordes.
+So now during the working day, I switch keybind modes on the gamepad and I can use the buttons to fire automations in Home Assistant that let me control not only the meeting light, but my desk lamp, and other lights in the house, all with the push of a button. After work, when it's time to game, I just switch keybinds again to the correct profile for the game I am playing and I am off to killing zombie hordes.
 
 This will work with other gaming pads no doubt, but since I have a Nostromo, that is what I am going to talk to in this article.
 
