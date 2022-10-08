@@ -49,8 +49,6 @@ Allstar:
   * This node has Echolink 939485 (N8ACL-L) connected to it.
 * Node KD8LBS 503730
   * This has DMR BM Talkgroup 3110683 Connected to it.
-* Node HOIP 471942
-  * This has DMR TGIF Talkgroup 4647 Connected to it.
 
 Echolink:
 * Node 20331 N8ACL - Personal Node. Usually through my phone.
@@ -63,7 +61,7 @@ DMR Talkgroups:
   * 311293 - The Darksiders
 * TGIF
   * 311293 - The Darksiders
-  * 4647 - [Hams Over IP (HOIP)](https://hamsoverip.com) (Linked to Allstar)
+
 
 Local Repeaters I can be found on:
 * 145.370- (PL 123.0) - [K8YOJ Hamilton County ARPSC](https://www.hamcoarpsc.org)
