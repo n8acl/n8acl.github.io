@@ -9,7 +9,7 @@ categories: Ham-Radio
 
 In my last post, I talked about how to setup Allstar to connect to Discord. In this one, I am going to talk about setting up a SIP client to connect to Allstar.
 
-But why would you want to do this? There are alot of softphone clients out there, as well as a bunch of old liquidated IP Hard Phones that you the Session Inititation Protocol, or SIP, to connect to a PBX. IAX is used to connect Asterisk Peers together, but in many applications, it has been used as a way to connect a client. There are some flaws and got-ya's to that, but SIP is a much better, cleaner protocol to use for carrying Audio over a call.
+But why would you want to do this? There are alot of softphone clients out there, as well as a bunch of old liquidated IP Hard Phones that use the Session Inititation Protocol, or SIP, to connect to a PBX. IAX is used to connect Asterisk Peers together, but in many applications, it has been used as a way to connect a client. There are some flaws and got-ya's to that, but SIP is a much better, cleaner protocol to use for carrying Audio over a call.
 
 Remember that under the hood, Allstar is really just an Asterisk PBX, so connecting a phone to it is trivial.
 
@@ -74,7 +74,7 @@ context=myphone           ; Points to the stanza in extensions.conf
 callerid="<Your callsign>"
 ```
 
-203 is just the extension number I gave it.. It can be anything you want, but remember that this will be the username for your login and it must be a number. We put that in the stanza header and then also in username and mailbox.
+2000 is just the extension number I gave it.. It can be anything you want, but remember that this will be the username for your login and it must be a number. We put that in the stanza header and then also in username and mailbox.
 
 Make sure to set a password you will remember. you will need this later.
 

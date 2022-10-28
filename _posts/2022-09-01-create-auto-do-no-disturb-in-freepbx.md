@@ -57,7 +57,7 @@ First we need to setup a new ```Time Group``` for our AutoDND.
 
 First we need to give it a description so that we know what this is for. I would suggest ```AutoDND``` since that is what we are using it for.
 
-Now comes thr tricky part. How do we set up the time groups properly. This tripped me up at first trying to figure out how this worked. This is not like setting a recurring event in a calendar app. So if you set from say 12:00 PM - 3:00 PM but you want it every day, if you try to set it for Sunday to Saturday, it won't work.
+Now comes the tricky part. How do we set up the time groups properly. This tripped me up at first trying to figure out how this worked. This is not like setting a recurring event in a calendar app. So if you set from say 12:00 PM - 3:00 PM but you want it every day, if you try to set it for Sunday to Saturday, it won't work.
 
 So what you will need to do is set it for every 24 hour period you want within a week. And you can set a whole week in one Time Group... Let me give you an example:
 

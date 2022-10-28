@@ -106,7 +106,7 @@ env:
 
 First I give the job a name and then I only want it to run when there is a push to the ```_posts``` folder in the repo, basically when I add a new post file. That is what I am saying here. I am filtering the pushes on that folder. That way if I make an update to a static page like a contact page or an about page, I don't want those commits posts to the Micro-Blogging Services.
 
-We are also creating an evironment Variable that holds our status message we want posted. This creates the message from the commit message and includes the site URL.
+We are also creating an environment Variable that holds our status message we want posted. This creates the message from the commit message and includes the site URL.
 
 {% raw %}
 ```yaml

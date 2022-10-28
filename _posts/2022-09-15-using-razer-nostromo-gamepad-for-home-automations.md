@@ -2,7 +2,7 @@
 layout: post
 title: "Using a Razer Nostromo Gamepad for Home Automations"
 tags: ["Home-Automation","Gaming", "Home-Assistant"]
-categories: ["Home-Automation","Gaming", Home-Assistant]
+categories: ["Home-Automation","Gaming", "Home-Assistant"]
 ---
 
 ## Introduction
