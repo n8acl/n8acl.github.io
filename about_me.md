@@ -4,7 +4,7 @@ title: About Me
 permalink: /about_me/
 ---
 
-So about me. Where do I start....
+So about me. Where do I start.... There is so much about me you probably won't care about.
 
 I was born at a tender young age in 1979 in Cincinnati, OH and like most Cincinnatians, have never left. I wasn't a total geek at first, but have grwon into one and wear that badge proudly.
 
