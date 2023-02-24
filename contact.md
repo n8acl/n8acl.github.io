@@ -19,7 +19,6 @@ Email:
 
 Twitter:
 * Main Account: [@n8acl](https://www.twitter.com/n8acl)
-* APRS Track Account: [@n8acl_aprs](https://www.twitter.com/n8acl_aprs)
 
 Mastodon:
 * Main Account: [@n8acl@mastodon.radio](https://mastodon.radio/@n8acl)
@@ -38,7 +37,6 @@ DAPNET:
 * N8ACL (RIC: 0110795)
 
 Amateur Radio VOIP Phone Services
-* Online Amateur Radio Community (OARC) (UK Based) [https://www.oarc.uk](https://www.oarc.uk) - EXT 4046
 * AmateurWire [https://amateurwire.com](https://amaterwire.com) - EXT 1090
 
 APRS:
@@ -46,13 +44,12 @@ APRS:
 
 Allstar:
 * Node N8ACL 471940
-  * This node has Echolink 939485 (N8ACL-L) connected to it.
 * Node KD8LBS 503730
   * This has DMR BM Talkgroup 3110683 Connected to it.
+  * This also has Echolink 939485 N8ACL-L connected to it.
 
 Echolink:
 * Node 20331 N8ACL - Personal Node. Usually through my phone.
-* Node 939485 N8ACL-L - This is connected to ASL 471940.
 
 DMR Talkgroups:
 * Brandmeister
