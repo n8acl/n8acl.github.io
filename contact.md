@@ -30,9 +30,6 @@ Discord:
 Telegram:
 * ravendos36
 
-Matrix:
-* @ravendos:matrix.org
-
 DAPNET:
 * N8ACL (RIC: 0110795)
 
