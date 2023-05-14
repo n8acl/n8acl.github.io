@@ -17,18 +17,12 @@ Email:
 * n8acl (remove this part) @qsl.net
 * n8acl (remove this part) @winlink.org
 
-Twitter:
-* Main Account: [@n8acl](https://www.twitter.com/n8acl)
-
 Mastodon:
 * Main Account: [@n8acl@mastodon.radio](https://mastodon.radio/@n8acl)
 * APRS Track Account: [@n8acl@botsin.space](https://botsin.space/@n8acl_aprs)
 
 Discord:
 * Ravendos#7364
-
-Telegram:
-* ravendos36
 
 DAPNET:
 * N8ACL (RIC: 0110795)
