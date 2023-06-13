@@ -1,10 +1,11 @@
-baseurl: n8acl.github.io
 title: Jeff's Tech Adventures
 author: 
   name: Jeff Lehman, N8ACL
   email: n8acl@qsl.net
 description: > # this means to ignore newlines until "show_excerpts:"
   My tech/programming adventures along with some Ham Radio and other stuff thrown in. Basically my ramblings of things that I find interesting.
+
+baseurl: https://n8acl.github.io
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -18,7 +19,7 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: n8acl
+    # twitter: n8acl
     github:  n8acl
     # devto: jekyll
     # dribbble: jekyll

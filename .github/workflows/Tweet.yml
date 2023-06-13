@@ -12,13 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: infraway/tweet-action@v1.0.1
-        with:
-          status: ${{ env.status }}
-          api_key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
-          api_key_secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
-          access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
       - name: fediverse-action
         uses: rzr/fediverse-action@v0.0.6
         with:
