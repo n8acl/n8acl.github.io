@@ -5,7 +5,7 @@ author:
 description: > # this means to ignore newlines until "show_excerpts:"
   My tech/programming adventures along with some Ham Radio and other stuff thrown in. Basically my ramblings of things that I find interesting.
 
-baseurl: n8acl.github.io
+url: n8acl.github.io
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
