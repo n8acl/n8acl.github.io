@@ -22,7 +22,7 @@ Mastodon:
 * APRS Track Account: [@n8acl@botsin.space](https://botsin.space/@n8acl_aprs)
 
 Discord:
-* Ravendos#7364
+* Ravendos
 
 DAPNET:
 * N8ACL (RIC: 0110795)
