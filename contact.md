@@ -49,6 +49,7 @@ DMR Talkgroups:
   * 311293 - The Darksiders
 * TGIF
   * 311293 - The Darksiders
+  * 865 - Knoville Digital Group
 
 
 Local Repeaters I can be found on:
