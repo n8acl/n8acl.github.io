@@ -4,6 +4,10 @@ title: "Using a Razer Nostromo Gamepad for Home Automations"
 tags: ["Home-Automation","Gaming", "Home-Assistant"]
 categories: ["Home-Automation","Gaming", "Home-Assistant"]
 ---
+## Update: 10/24/2023
+
+As of August 2023 I upgraded to a Razer Tartarus V2 and have retired the Nostromo. This article still applies and things work the same, but the old war vetran of many many virtual battles needed to be retired.
+
 
 ## Introduction
 

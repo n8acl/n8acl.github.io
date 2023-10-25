@@ -94,7 +94,7 @@ Once it comes back up, make sure that it comes up correctly.
 
 ## Setup your router
 
-Unless you are like me and don't like to punch throw unessesary ports on your router firewall and connect to all you services at home via a VPN (told you I was a geek), you will need to forward the SIP port in your router to the IP address of your Allstar System. You will need to forward it as UDP. This port number will be the same one you just setup in the ```sip.conf``` file.
+Unless you are like me and don't like to punch threw unessesary ports on your router firewall and connect to all you services at home via a VPN (told you I was a geek), you will need to forward the SIP port in your router to the IP address of your Allstar System. You will need to forward it as UDP. This port number will be the same one you just setup in the ```sip.conf``` file.
 
 Each router is different on how to do this, so you will need to look that up.
 
