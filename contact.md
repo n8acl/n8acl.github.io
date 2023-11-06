@@ -35,8 +35,6 @@ APRS:
 
 Allstar:
 * Node N8ACL 471940
-* Node KD8LBS 503730
-  * This has DMR BM Talkgroup 3110683 Connected to it.
   * This also has Echolink 939485 N8ACL-L connected to it.
 
 Echolink:
@@ -44,8 +42,7 @@ Echolink:
 
 DMR Talkgroups:
 * Brandmeister
-  * 3110795 - N8ACL Talkgroup
-  * 3110683 - [Ohio Valley Experimenters Club](https://kd8lbs.com) (Linked to Allstar)
+  * 3110683 - [Ohio Valley Experimenters Club](https://kd8lbs.com)
   * 311293 - The Darksiders
 * TGIF
   * 311293 - The Darksiders
