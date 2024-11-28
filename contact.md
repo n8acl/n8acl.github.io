@@ -24,6 +24,9 @@ Want to get a hold of me? Here are some ways that you can contact me if you want
 **Discord**:
 * Ravendos
 
+**Matrix**:
+* @ravendos:matrix.org
+
 **DAPNET**:
 * N8ACL (RIC: 0110795)
 
