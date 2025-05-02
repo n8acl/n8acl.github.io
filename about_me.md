@@ -20,7 +20,7 @@ I finally went back to school a few years ago and got my Bachelors and Masters D
 
 I setup my own home lab a few years ago and play with Linux, Macs, Raspberry PIs, Home Automation.. You name it, I have tried it.
 
-SQL Devloper by day, husband and father by night. I am married to one of the most patient and wonderful women in the world. I have an awesome 8 Year old son and a fantastic 23 year old step son. 
+SQL Developer by day, husband and father by night. I am married to one of the most patient and wonderful women in the world. I have an awesome 8 Year old son and a fantastic 23 year old step son. 
 
 Outside of tech, I have all sorts of varied interests. Fishing, camping, shooting, traveling, spending time with my family, playing board games and D&D, Geocaching, listening to podcasts. I just recently got a vertical electric smoker and have jumped into the world of smoking meat and BBQing. So while a geek, not totally geeky ;)
 

@@ -36,7 +36,7 @@ Want to get a hold of me? Here are some ways that you can contact me if you want
 **Allstar**:
 * Node N8ACL 471940
   * This also has Echolink 939485 N8ACL-L connected to it.
-* Node N8ACL 471942 - The Darksiders
+* Node N8ACL 471943 - The Darksiders
   * This also has TGIF 311293 and Amcomm 311293 linked to it.
 
 **Echolink**:
