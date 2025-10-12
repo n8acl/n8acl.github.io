@@ -16,7 +16,7 @@ The first time through college, I had a student job in the Computer Lab and got 
 
 I learned all sorts of programming languages over the years which brings me to today.
 
-I finally went back to school a few years ago and got my Bachelors and Masters Degrees. I have been working fulltime as a SQL Database Developer for almost 20 years now. I do alot of Python Development in my spare time. I am also an Amateur Radio Operator and most of the projects I work on are geared for that.
+I finally went back to school a few years ago and got my Bachelors and Masters Degrees. I have been working fulltime as a SQL Database Developer for 23 years now. I do alot of Python Development in my spare time. I am also an Amateur Radio Operator and most of the projects I work on are geared for that.
 
 I setup my own home lab a few years ago and play with Linux, Macs, Raspberry PIs, Home Automation.. You name it, I have tried it.
 
